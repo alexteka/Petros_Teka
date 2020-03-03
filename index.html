@@ -5,10 +5,54 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	 <style>
-	 	body {
-	 		background-color: black;
-	 	}
+	@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+	body {
+		background-color: black;
+		font-family: 'Lato', sans-serif;
+		}
+
+
+	 	.carousel-caption{
+		bottom: 270px;
+		}
+
+	.carousel-caption h5{
+		font-size: 40px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-top: 50px;
+		border-top: double 5px;
+		border-bottom: double 5px;
+		}
+	.cap-sm h4{
+			text-transform: uppercase;
+			letter-spacing:  2px;
+			margin-top:  15px;
+			margin-top: 25px;
+
+		}
+
+	.columns img{
+	transition: all 1s ease-in;
+	z-index: 0;
+	padding-right: 20px;
+	}
+
+	.columns img:hover{
+		transform: scale(1.01) !important;
+		transition: all 0.5s ease-in !important;
+		filter: brightness(0.5) !important;
+		background-size: 110% !important;
+		float: left;
+		z-index: 0
+	}
+	.cap-sm{
+		position: absolute;
+		top: 30%;
+		left: 30%;
+		}
 	 </style>
+	}
 
 </head>
 <body>
@@ -18,19 +62,19 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="image/black.jpg" alt="First slide">
       <div class="carousel-caption d-inline d-md-block">
-    <h5> Wild PhotoGrapher & CinimatoGrapher</h5>
+    <h5>PhotoGrapher & CinimatoGrapher</h5>
 </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="image/black.jpg" alt="Second slide">
          <div class="carousel-caption d-none d-md-block">
-    <h5> Wild PhotoGrapher & CinimatoGrapher</h5>
+    <h5>PhotoGrapher & CinimatoGrapher</h5>
 </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="image/black.jpg" alt="Third slide">
          <div class="carousel-caption d-none d-md-block">
-    <h5> Wild PhotoGrapher & CinimatoGrapher</h5>
+    <h5>PhotoGrapher & CinimatoGrapher</h5>
 </div>
 
     </div>
@@ -38,16 +82,22 @@
 </div>
 	<div class="jumbotron" style="background-color: white;">
 	<div class="row justify-content-end">
-		<div class="col-md-6">
+		<div class="col-md-6 columns">
 			<a target="_blank" href="personal/index.html"> 
 			<img src="image/black.jpg" class="img-fluid">
 			</a>
+			<div class="cap-sm">
+	 				<h1 class="text-light"> Personals </h1>
+			 </div>	
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-md-6 columns">
 			<a target="_blank" href="commercial/index.html"> 
 			<img src="image/black.jpg" class="img-fluid">
 			</a>
+			<div class="cap-sm">
+	 				<h1 class="text-light"> Commercial </h1>
+			 </div>	
 		</div>
 	</div>
 </div>
@@ -73,10 +123,7 @@
 		<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> peter4@gmail.com </a>
 		 <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i>+125 984 080 469</a>
 		</div>
-
-
 		</div>
-
 	</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
